@@ -7,6 +7,24 @@
 #define DOUBLE 4
 #define COMP 5
 
+ScalarConverter::ScalarConverter()
+{
+}
+
+ScalarConverter::~ScalarConverter()
+{
+}
+
+ScalarConverter::ScalarConverter(const ScalarConverter &org)
+{
+    (void) org;
+}
+
+ScalarConverter& ScalarConverter::operator=(const ScalarConverter &org)
+{
+    (void) org;
+    return (*this);
+}
 
 int check_errors(std::string &s)
 {

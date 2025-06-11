@@ -5,6 +5,11 @@
     #include <iostream>
 
     class ScalarConverter{
+        private:
+            ScalarConverter();
+            ~ScalarConverter();
+            ScalarConverter(const ScalarConverter &org);
+            ScalarConverter& operator=(const ScalarConverter &org);
         public:
             static void convert(std::string s);
     };
